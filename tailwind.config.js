@@ -16,7 +16,9 @@ module.exports = {
         "primaryBg": "#f5f5f5",
         "labelColor": "#312a2a",
         "primary": "#00263f",
-        "primaryHover": "#3945f8"
+        "primaryHover": "#3945f8",
+        "thirdBg": "#095484",
+        "textColor": "#888888"
       }
     },
   },
