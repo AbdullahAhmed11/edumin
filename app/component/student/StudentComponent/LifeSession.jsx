@@ -22,7 +22,8 @@ const LifeSession = () => {
                 ]}
             />
 
-        </div>)
+        </div>
+    )
 }
 
 export default LifeSession

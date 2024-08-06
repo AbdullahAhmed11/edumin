@@ -18,8 +18,9 @@ import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 import Link from 'next/link';
+import { GiHamburgerMenu } from "react-icons/gi";
 
-const Navbar = () => {
+const AdminNavbar = ({ handleOpenSide }) => {
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
@@ -28,10 +29,11 @@ const Navbar = () => {
     const handleClose = () => {
         setAnchorEl(null);
     };
+
     return (
         <nav className='w-full p-4 bg-white flex items-center justify-between'>
 
-            <div className="relative ">
+            <div className="relative hidden md:block">
                 <input
                     type="text"
                     placeholder="Search"
@@ -40,6 +42,9 @@ const Navbar = () => {
                 <div className="absolute inset-y-0 left-0 flex items-center pl-3">
                     <IoIosSearch className="text-gray-400 w-[24px] h-[24px]" />
                 </div>
+            </div>
+            <div className='block md:hidden cursor-pointer'>
+                <GiHamburgerMenu onClick={handleOpenSide} className='w-10 h-10 text-primary' />
             </div>
             <div className='flex items-center gap-5'>
                 <div className='relative'>
@@ -124,4 +129,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default AdminNavbar
