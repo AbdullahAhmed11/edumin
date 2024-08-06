@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'selector',
+
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -18,9 +20,13 @@ module.exports = {
         "primary": "#00263f",
         "primaryHover": "#3945f8",
         "thirdBg": "#095484",
-        "textColor": "#888888"
-      }
+        "textColor": "#888888",
+        "secondryColor": "#444444bf",
+        "darkBg": "#212130",
+      },
     },
+
   },
+
   plugins: [],
 };

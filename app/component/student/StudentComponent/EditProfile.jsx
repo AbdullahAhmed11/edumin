@@ -20,7 +20,6 @@ const EditProfile = () => {
         <div className='w-full flex flex-col  gap-3 p-4'>
             <FormControl>
                 <div className='flex items-center w-full gap-3'>
-
                     <div className='flex flex-col gap-2 w-1/2'>
                         <FormLabel className='text-labelColor'>First Name</FormLabel>
                         <TextField fullWidth id="outlined-basic" variant="outlined" />

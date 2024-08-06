@@ -7,7 +7,7 @@ import TablesHome from '../StudentComponent/TablesHome';
 
 const Home = () => {
     return (
-        <div className='w-full h-[100%] flex flex-col md:flex-row gap-3'>
+        <div className='w-full  bg-primaryBg flex flex-col md:flex-row gap-3'>
             <div className='md:w-1/3 w-full flex flex-col gap-3 p-4'>
                 <PaymentCard />
                 <DataCard />
